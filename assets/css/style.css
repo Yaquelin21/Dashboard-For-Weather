@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 1;
+    background-color: rgb(90, 86, 82);
+    /*background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; */
+}
+
+#title {
+    font-size: 60px;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(170, 240, 217);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: black;
+}
+
+p {
+    font-size: 20px;
+}
+
+.mainBox {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    /* border: rgb(251, 251, 251) 5px solid; */
+}
+
+aside {
+    /* border: black 6px solid; */
+    width: 20%;
+    padding-top: 30px;
+    max-width: 40vh;
+    min-width: 30vh;
+    background-color: rgb(60, 52, 52);
+    color: rgb(198, 211, 228);
+}
+
+.sBtn {
+    background-color: lightblue;
+    border-radius: 8px;
+    width: 28vh;
+    height: 50px;
+}
+
+input {
+    /* border-radius: 8px; */
+    background-color: lightgoldenrodyellow;
+    width: 28vh;
+    height: 50px;
+    border-radius: 8px;
+}
+
+#searchArea {
+    color: rgb(1, 1, 1)
+}
+
+.weather {
+    background-image: url("./jae-bano-Xbf_4e7YDII-unsplash.jpg");
+    background-size: cover;
+    width: 85%;
+    /* border: 5px solid fuchsia ; */
+}
+
+#weatherHeader {
+    background: rgb(65, 50, 50);
+    width: 100%;
+    height: auto;
+    /* border: 5px solid white; */
+    padding: 30px;
+    text-align: left;
+    background: transparent;
+    color: white;
+}
+
+.cardBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 10px 10px 10px;
+    justify-content: space-between;
+    /* border: 5px solid rgb(52, 238, 52);  */
+}
+
+#fiveDaysForecast {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: rgb(5, 5, 5);
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.weatherCard {
+    width: 18%;
+    height: 50vh;
+    /* border: 2px solid white; */
+    color: white;
+    text-align: left;
+    padding: 50px 0px 0px 10px;
+    background: #000000a0;
+    border-radius: 30px;
+}
+
+#gradient {
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(80, 80, 177, 0), rgb(70, 72, 168));
+}
+
+@supports (font-variation-settings: "wght" 450) {
+    * {
+        font-family: 'Markazi Text';
+        font-weight: 450;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+/* 
+  GIVEN a weather dashboard with form inputs
+  WHEN I search for a city
+  THEN I am presented with current and future conditions for that city and that city is added to the search history
+  WHEN I view current weather conditions for that city
+  THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+  WHEN I view the UV index
+  THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+  WHEN I view future weather conditions for that city
+  THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+  WHEN I click on a city in the search history
+  THEN I am again presented with current and future conditions for that city */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header id="gradient">
+        <h1 id="title">Weather Dashboard <br>
+
+            <p id="currentHour"></p>
+        </h1>
+
+    </header>
+    <div class="mainBox">
+        <aside>
+            <div class="search">
+                <h2>Search for a City: <br>
+                    <input id="searchArea" type="text" placeholder="Enter City">
+                </h2>
+
+                <button class="sBtn" onclick="searchingBtn()"> Search</button>
+            </div>
+            <div class="citylist">
+
+            </div>
+    </div>
+    </aside>
+    <div class="weather">
+        <div id="weatherHeader">
+            <h2><span id="time"> </span> </h2>
+            <img id="weatherIcon0" src="">
+            <!-- <h2><span id="weatherIcon0" > </span> </h2> -->
+            <!-- <h2><span id="weatherIcon1" > </span> </h2> -->
+            <!-- <h2><span class="weatherIcon1"> </span> </h2> -->
+            <h2> <span id="cityName"> </span> </h2>
+            <h2> <span id="tempName"> </span></h2>
+            <h2> <span id="humidityName"> </span></h2>
+            <h2> <span id="windSpeed"> </span></h2>
+        </div>
+        <div id="fiveDaysForecast">
+
+
+        </div>
+        <div class="cardBox">
+            <div class="weatherCard">
+                <h3><span id="time1"> </span> </h2>
+                    <img id="weatherIcon1" src="">
+                    <h3> <span id="cityName1"> </span> </h2>
+                        <h3> <span id="tempName1"> </span></h2>
+                            <h3> <span id="humidityName1"> </span></h2>
+                                <h3> <span id="windSpeed1"> </span></h2>
+            </div>
+            <div class="weatherCard">
+                <h3><span id="time2"> </span> </h2>
+                    <img id="weatherIcon2" src="">
+                    <h3> <span id="cityNam2"> </span> </h2>
+                        <h3> <span id="tempName2"> </span></h2>
+                            <h3> <span id="humidityName2"> </span></h2>
+                                <h3> <span id="windSpeed2"> </span></h2>
+            </div>
+            <div class="weatherCard">
+                <h3><span id="time3"> </span> </h2>
+                    <img id="weatherIcon3" src="">
+                    <h3> <span id="cityName3"> </span> </h2>
+                        <h3> <span id="tempName3"> </span></h2>
+                            <h3> <span id="humidityName3"> </span></h2>
+                                <h3> <span id="windSpeed3"> </span></h2>
+            </div>
+            <div class="weatherCard">
+                <h3><span id="time4"> </span> </h2>
+                    <img id="weatherIcon4" src="">
+                    <h3> <span id="cityName4"> </span> </h2>
+                        <h3> <span id="tempName4"> </span></h2>
+                            <h3> <span id="humidityName4"> </span></h2>
+                                <h3> <span id="windSpeed4"> </span></h2>
+            </div>
+            <div class="weatherCard">
+                <h3><span id="time5"> </span> </h2>
+                    <img id="weatherIcon5" src="">
+                    <h3> <span id="cityName5"> </span> </h2>
+                        <h3> <span id="tempName5"> </span></h2>
+                            <h3> <span id="humidityName5"></span></h2>
+                                <h3> <span id="windSpeed5"> </span></h2>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
